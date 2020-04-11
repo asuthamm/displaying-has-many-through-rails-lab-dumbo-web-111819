@@ -1,0 +1,4 @@
+<h1>List of All Patients</h1><br>
+<%@patients.select do |pt|%>
+    <%=link_to pt.name, pt%><br>
+<%end%>

@@ -1,0 +1,10 @@
+<h1><%=@patient.name%></h1>
+<h4>Number of appointment(s): <%=@patient.appointments.count%></h4>
+
+<p>
+<%@patient.appointments.map do |appt|%>
+    <%=appt.appointment_datetime%>
+        <%=appt.doctor.name%><br>
+<%end%>
+</p>
+
